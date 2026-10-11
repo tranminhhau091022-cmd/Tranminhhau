@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Phòng - Trần Hậu Homestay</title>
+</head>
+<body>
+        <h2>Trần Hậu Homestay</h2>
+      <div align="center">
+    <a href="index.html" style="
+        display: inline-block;
+        text-decoration: none;
+        color: #333333;
+        border: 2px solid #333333;
+        border-radius: 4px;
+        padding: 12px 60px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;">Về Trang Chủ</a>
+</div>
+    </header>
+
+    <hr>
+    <main>
+        <section>
+            <h1>Phiếu Đặt Phòng Nghỉ</h1>
+            <p>Vui lòng điền đầy đủ thông tin dưới đây để gửi yêu cầu giữ chỗ.</p>
+        </section>
+        <section>
+                <fieldset>
+                    <legend><h3>1. Thông tin cá nhân</h3></legend>
+                    
+                    <p>
+                        <label for="fullName">Họ và Tên (*):</label><br>
+                        <input type="text" id="fullName" required placeholder="Ví dụ: Nguyễn Văn A">
+                    </p>
+                    
+                    <p>
+                        <label for="phoneNumber">Số Điện Thoại (*):</label><br>
+                        <input type="tel" id="phoneNumber" required placeholder="Ví dụ: 0905XXXXXX">
+                    </p>
+                    
+                    <p>
+                        <label for="email">Địa chỉ Email:</label><br>
+                        <input type="email" id="email" placeholder="example@gmail.com">
+                    </p>
+                </fieldset>
+
+                <br>
+                <fieldset>
+                    <legend><h3>2. Chi tiết đặt phòng</h3></legend>
+                    
+                    <p>
+                        <label for="roomSelect">Chọn Loại Phòng (*):</label><br>
+                        <select id="roomSelect">
+                            <option value="standard">Phòng Cặp Đôi (Standard) - 450.000đ / đêm</option>
+                            <option value="deluxe">Phòng Gia Đình (Deluxe) - 850.000đ / đêm</option>
+                            <option value="dorm">Phòng Tập Thể (Dorm) - 150.000đ / đêm</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="checkIn">Ngày Nhận Phòng (Check-in) (*):</label><br>
+                        <input type="date" id="checkIn" required>
+                    </p>
+                    
+                    <p>
+                        <label for="checkOut">Ngày Trả Phòng (Check-out) (*):</label><br>
+                        <input type="date" id="checkOut" required>
+                    </p>
+                    
+                    <p>
+                        <label for="quantity">Số lượng khách:</label><br>
+                        <input type="number" id="quantity" min="1" max="10" value="1">
+                    </p>
+
+                    <p>
+                        <label for="specialRequest">Yêu cầu đặc biệt khác:</label><br>
+                        <textarea id="specialRequest" rows="4" cols="40" placeholder="Ví dụ: phòng hướng đón nắng, có nôi em bé..."></textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+                <div>
+                    <h4> Hướng dẫn thanh toán:</h4>
+                    <p>Hệ thống sẽ gửi xác nhận kèm hóa đơn tạm tính qua Số điện thoại/Email của bạn.</p>
+                    <p>Để hoàn tất, quý khách vui lòng chuyển khoản cọc trước 50% vào tài khoản:</p>
+                    <ul>
+                        <li><b>Ngân hàng:</b> Vietcombank</li>
+                        <li><b>Số tài khoản:</b> 123456789</li>
+                        <li><b>Chủ tài khoản:</b> Trần Minh Hậu</li>
+                    </ul>
+                </div>
+
+                <br>
+                <button type="submit">Xác Nhận Đặt Phòng</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+  
+
+</body>
+</html>
